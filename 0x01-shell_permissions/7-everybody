@@ -1,2 +1,2 @@
 #!/bin/bash
-chamod a:+x hello
+chamod a+x hello
