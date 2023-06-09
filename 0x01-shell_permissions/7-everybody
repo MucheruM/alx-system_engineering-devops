@@ -1,2 +1,2 @@
 #!/bin/bash
-chamod ogu+x hello
+chamod ugo+x hello
