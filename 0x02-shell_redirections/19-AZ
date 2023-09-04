@@ -1,0 +1,2 @@
+#!/bin/bash
+tr -E [=A c=][=Z e=]
