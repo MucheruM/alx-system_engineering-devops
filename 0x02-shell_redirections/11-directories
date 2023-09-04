@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ad [^. ..]+
+find . -type -not -name "." | wc -l
