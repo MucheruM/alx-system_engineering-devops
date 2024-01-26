@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Use sigkill to kill prev script signal
+
+pkill -f 4-to_infinity_and_beyond

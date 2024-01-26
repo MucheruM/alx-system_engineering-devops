@@ -1,0 +1,4 @@
+#!/usr/bin/evn bash
+# The script display lines containing the word bash.
+
+ps auxf | grep bash
