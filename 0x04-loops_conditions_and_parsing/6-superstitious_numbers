@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This Bash script displays Best School 10 times but Hi on 9th iteration
 
-count=0
-while [ $count -lt 20 ];
+count=1
+while [ $count -lt 21 ];
 do
     echo $count
     case $count in
