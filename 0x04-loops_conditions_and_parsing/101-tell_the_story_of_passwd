@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # The bash script tells a story using the /etc/passwd fields
 
-IFS=':'
+IFS=":"
 while read -r username password uid gid info home shell; do
     echo "The user $username is part of the $gid gang, lives in $home and"\
     "rides $shell. $uid's place is rotected by the passcode $password, more info"\
