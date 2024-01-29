@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# The script uses  awk to print particular text from server logs
+
+awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
