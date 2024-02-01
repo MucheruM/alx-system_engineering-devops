@@ -1,0 +1,6 @@
+0-OSI_model  1-types_of_network  2-MAC_and_IP_address  3-UDP_and_TCP  README.md
+root@3243581dc364:~/alx-system_engineering-devops/0x07-networking_basics# emacs 4-TCP_and_UDP_ports
+root@3243581dc364:~/alx-system_engineering-devops/0x07-networking_basics# ls
+0-OSI_model  1-types_of_network  2-MAC_and_IP_address  3-UDP_and_TCP  4-TCP_and_UDP_ports  README.md
+root@3243581dc364:~/alx-system_engineering-devops/0x07-networking_basics# emacs
+77;30604;0c
