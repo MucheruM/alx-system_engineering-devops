@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all active IPv4 IPs on localhost
+
+ifconfig | grep "inet[^6]" | awk '{print $2}'
