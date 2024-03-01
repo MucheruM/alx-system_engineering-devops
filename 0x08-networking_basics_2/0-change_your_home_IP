@@ -5,7 +5,7 @@
 cp /etc/hosts /tmp/hosts_bkup
 
 # Update localhost entry to resolve 127.0.0.2
-grep -q "localhost" /etc/hosts || echo -e "\n127.0.0.2\tlocalhost" >> /etc/hosts
+grep -q "localhost" /etc/hosts || echo -e "\n127.0.0.2\tlocalhost" >> /tmp/hosts_bkup
 
 # Update facebook.com entry to resolve 8.8.8.8
 grep -q "facebook.com" /etc/hosts || echo -e "\n8.8.8.8\tfacebook.com" >> /etc/hosts
