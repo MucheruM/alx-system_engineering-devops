@@ -1,0 +1,6 @@
+#!/bin/env bash
+# Create a connection to the server
+
+IdentityFile ~/.ssh/school
+PubKeyAuthentication yes
+PasswordAuthentication no
