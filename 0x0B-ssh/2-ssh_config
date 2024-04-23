@@ -1,4 +1,3 @@
-#!/bin/env bash
-# Connect to the server using specific SSH configurations
-
-ssh -i ~/.ssh/school -o PubKeyAuthentication=yes -o PasswordAuthentication=no ubuntu@54.226.15.254
+IdentityFile ~/.ssh/school
+PubKeyAuthentication yes
+PasswordAuthentication no
