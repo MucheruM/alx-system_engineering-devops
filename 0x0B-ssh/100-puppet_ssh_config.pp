@@ -15,7 +15,7 @@
 # list of available options, their meanings and defaults, please see the
 # ssh_config(5) man page.
 
-Include /etc/ssh/ssh_config.d/*.conf
+Include /etc/ssh/ssh_config
 
 Host *
 #   ForwardAgent no
