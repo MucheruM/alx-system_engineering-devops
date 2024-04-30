@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #This scritp uses ssh key to login to a server
 
-ssh -i ~/.ssh/school ubuntu@54.226.15.254
+ssh -i ~/.ssh/school ubuntu@54.236.47.159
