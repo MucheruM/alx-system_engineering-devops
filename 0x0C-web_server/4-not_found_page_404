@@ -15,7 +15,7 @@ apt-get install -y nginx
 echo "Hello World!" > /var/www/html/index.html
 
 # configure error 404 page
-echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+echo "This page is not available" > /usr/share/nginx/html/404.html
 
 # confifure the server for redirection and 404 page
 echo -e "\tserver_name _;
