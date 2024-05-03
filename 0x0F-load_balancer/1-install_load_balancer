@@ -29,19 +29,19 @@ function add_config() {
 
     status=$?
         if [[ $status -ne 0 ]]; then
-	        # configure HAproxy
-		        echo "$config" >> /etc/haproxy/haproxy.cfg
-			    else
-			            echo "Configuration already exists."
-				            exit
-					        fi
+	    # configure HAproxy
+	    echo "$config" >> /etc/haproxy/haproxy.cfg
+	else
+	    echo "Configuration already exists."
+	    exit
+	fi
 
     grep -q "ENABLED" /etc/default/haproxy
 
     status=$?
         if [[ $status -ne 0 ]]; then
-	        echo "ENABLED=1" >> /etc/default/haproxy
-		    fi
+	    echo "ENABLED=1" >> /etc/default/haproxy
+	fi
 
     # restart HAproxy
         service haproxy restart
@@ -64,11 +64,11 @@ if [[ $status -ne 0 ]]; then
 
     if [[ ! $? ]]; then
             echo "Failed to install HAproxy."
-	            exit 1
-		        fi
+	    exit 1
+    fi
 
     add_config
     else
         # HAproxy is already installed, just add the configuration
-	    add_config
-	    fi
+	add_config
+fi
