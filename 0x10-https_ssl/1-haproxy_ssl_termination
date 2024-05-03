@@ -34,12 +34,12 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 frontend lzc_frontend
-	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/lzcorp.tech.pem
-	mode http
-	default_backend lzc_backend
+    bind *:80
+    bind *:443 ssl crt /etc/haproxy/certs/lzcorp.tech.pem
+    mode http
+    default_backend lzc_backend
 
 backend lzc_backend
-	balance roundrobin
-	server 514753-web-01 web-01.lzcorp.tech:80 check
-	server 514753-web-02 web-02.lzcorp.tech:80 check
+    balance roundrobin
+    server 514753-web-01 web-01.lzcorp.tech:80 check
+    server 514753-web-02 web-02.lzcorp.tech:80 check
