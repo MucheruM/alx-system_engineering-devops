@@ -16,7 +16,7 @@ echo "Hello World!" > /var/www/html/index.html
 
 echo -e "\tserver_name _;
 \tlocation /redirect_me {
-\t\treturn 301 https://lzcorp-landing-page.vercel.app/;
+\t\treturn 301 https://herumucheru-landing-page.vercel.app/;
 \t}" > /tmp/new_config
 
 sed -i '/server_name _;/{
